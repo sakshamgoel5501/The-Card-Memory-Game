@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+
+    <link rel="shortcut icon" type="image/png" href="../Images/logo.png" />
+
+    <script src="script2.js"></script>
+
+    <style>
+        body {
+            background-image: url("../Images/bg2.png");
+            background-size: 60px;
+        }
+
+        .grow:hover {
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+        .imgdiv{
+            position: relative;
+            display: inline-table;
+            margin-top: 25px;
+            margin-left: 25px;
+            padding: 10px;
+            background-color: aliceblue;
+            text-align: center;
+            border: 2px solid aliceblue;
+            cursor: pointer;
+        }
+        
+        img{
+            width: 85px;
+            height: 110px;
+        }
+
+        .hide{
+            padding: 10px;
+            visibility: hidden;
+        }
+
+        .match, .showimg{
+            visibility: visible !important;
+        }
+
+        /* .back {
+            font-size: 2vw;
+            float: left;
+            text-align: center;
+            margin-left: 1.5vw;
+            margin-top: 16.2vw;
+            border: 1vw;
+            border-color: black;
+            box-sizing: content-box;
+            background-color: transparent;
+            border-style: groove;
+            border-width: 1px;
+            width: 15vw;
+            background: rgba(255, 255, 255, 0.2);
+        } */
+    </style>
+</head>
+<body>
+    <embed width="0" height="0" src="BackgroundMusic.mp3" autostart="true" loop="true">
+    </embed>
+    
+    <br><br><br><br><br>
+
+    <div class="container">
+        <div id="selectLevel2">
+            <button class="btn btn-success grow" style="width:350px; height:45px; background:#cccbd1; transition:all 0.3s ease; text-align: center; font-size: 3vw; margin-left: 35.15vw;" onclick="start()">START</button><br><br>
+        </div>
+        <div id="score"></div>
+        <div id="boardgame"></div>
+    </div>
+
+    <!-- <a style="text-decoration: none; color: black; font-weight: bold;" href="Levels.html" target="_self">
+        <div class="back">
+            BACK
+        </div>
+    </a> -->
+</body>
+</html>

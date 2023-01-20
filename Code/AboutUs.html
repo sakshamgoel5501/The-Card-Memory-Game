@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/logo.png" />
+    <style>
+        body {
+            background-image: url("../Images/bg1.png");
+            background-color: rgb(11, 12, 20);
+            background-size: 100vw 50vw;
+            background-repeat: no-repeat;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: "Montserrat Medium";
+            max-width: 40ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            color: aliceblue;
+            margin-top: 7vw;
+            font-size: 3vw;
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        div.swing {
+            width:45px;
+            height: 45px;
+            background:#cccbd1;
+            transition:all 0.3s ease;
+            float: right;
+        }
+
+        @-webkit-keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            } 
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes swing
+        {
+            15%
+            {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            30%
+            {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            50%
+            {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            65%
+            {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            80%
+            {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            100%
+            {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        .swing:hover
+        {
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+
+        .back {
+            font-size: 2vw;
+            float: left;
+            text-align: center;
+            margin-left: 1.5vw;
+            margin-top: 30vw;
+            border: 1vw;
+            border-color: aliceblue;
+            box-sizing: content-box;
+            background-color: transparent;
+            border-style: groove;
+            border-width: 1px;
+            width: 15vw;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <embed width="0" height="0" src="BackgroundMusic.mp3" autostart="true" loop="true">
+    </embed>
+    
+    <section id="main">
+        <h1>
+            <span>This</span>
+            <span>WebApp</span>
+            <span>is</span>
+            <span>developed</span>
+            <span>by</span>
+            <span>Saksham</span>
+            <span>Goel</span>
+        </h1>
+    </section>
+
+    <a style="text-decoration: none; color: aliceblue; font-weight: bold;" href="HomePage.html" target="_self">
+        <div class="back">
+            BACK
+        </div>
+    </a>
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+    <section id="ContactUs">
+        <hr width="99.5%">
+        <br><br><br>
+        <img src="../Images/logo.png" width="140vw" height="80vw" style="margin-left: 43.6vw;">
+        <p style="font-size: 1.5vw; color: aliceblue; text-align: center;">
+            © Copyright.
+            <br>
+            All Rights Reserved.
+        </p>
+        <br><br><br>
+        <a href="https://www.instagram.com/?hl=en" target="_self"> <img class="swing" src="../Images/instagram.png" width="60vw" height="60vw" style="margin-left: 32vw;"> </a>
+        <a href="https://twitter.com/login?lang=en" target="_self"> <img class="swing" src="../Images/twitter.png" width="60vw" height="60vw" style="margin-left: 5vw;"> </a>
+        <a href="https://www.facebook.com/" target="_self"> <img class="swing" src="../Images/facebook.png" width="60vw" height="60vw" style="margin-left: 5vw;"> </a>
+        <a href="https://www.linkedin.com/signup" target="_self"> <img class="swing" src="../Images/linkedin.png" width="60vw" height="60vw" style="margin-left: 5vw;"> </a>
+
+        <br><br><br>
+        <p style="font-size: 1.5vw; color: aliceblue;">
+            <b>Contact Us</b>
+            <br>
+            Phone &nbsp;: +91 9719007003 / +91 8171436655
+            <br>
+            E-mail : sakshamgoel5501@gmail.com
+        </p>
+        <br>
+    </section>
+</body>
+</html>
